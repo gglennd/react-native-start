@@ -1,5 +1,6 @@
 import { Text } from "react-native";
+import "../global.css";
 
 export default function Page() {
-  return <Text>Top-level page</Text>;
+  return <Text className="text-4xl">Top-level page</Text>;
 }
