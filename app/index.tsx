@@ -1,12 +1,17 @@
 import { useRouter } from 'expo-router';
-import { Button, Text, View } from 'react-native';
+
+import { Button } from '~/components/ui/button';
+import { Text } from '~/components/ui/text';
+import { View } from '~/components/ui/view';
 import '../global.css';
 
 export default function Page() {
   const route = useRouter();
   return (
     <View>
-      <Button onPress={() => route.push('notFound')} title='Not found page' />
+      <Button onPress={() => route.push('notFound')}>
+        <Text>Not found page</Text>
+      </Button>
       <Text className='text-4xl'>Top-level page</Text>
     </View>
   );
